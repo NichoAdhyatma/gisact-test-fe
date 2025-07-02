@@ -106,7 +106,6 @@ export default function SearchBar({
     <>
       <Card className="absolute top-4 right-4 z-[1000] bg-white shadow-lg border-0 py-0">
         <CardContent className="p-4">
-          {/* Search Input */}
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
             <Input
@@ -147,14 +146,12 @@ export default function SearchBar({
                 })}
               </ul>
 
-              {/* Results count */}
               <div className="mt-2 text-xs text-gray-500 px-1">
                 {suggestions.length} hasil ditemukan
               </div>
             </div>
           )}
 
-          {/* No results state */}
           {query && suggestions.length === 0 && (
             <div className="mt-3 text-center py-6 text-gray-500">
               <Search className="h-8 w-8 mx-auto mb-2 text-gray-300" />
